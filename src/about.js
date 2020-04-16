@@ -1,0 +1,20 @@
+const content = document.querySelector('#content');
+
+function createAbout() {
+    let aboutDiv = document.createElement('div');
+    aboutDiv.className = 'text-center section-padding';
+    aboutDiv.id = 'about-sec';
+
+    let aboutTitle = document.createElement('h2');
+    aboutTitle.innerHTML = 'About Us';
+
+    let aboutDescription = document.createElement('p');
+    aboutDescription.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et diam tincidunt, efficitur quam ac sodales justo. Suspendisse luctus, neque a congue lacinia, risus tortor ullamcorper ipsum, lacinia ornare mauris orci ut ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Maecenas viverra nibh ac arcu efficitur vulputate eget eget neque. Sed et ultrices arcu. Sed et turpis ut neque pretium congue eget id nisi. Donec cursus arcu vel quam vulputate ullamcorper. Pellentesque porttitor nisi ut ante blandit maximus.<br><br> Aenean placerat efficitur dolor in dapibus. Suspendisse malesuada lobortis turpis quis laoreet. Nullam anunc lectus. Quisque pulvinar, urna non venenatis feugiat, massa dolor suscipit risus, a feugiat elit eros a justo. Integer dapibus mi nec dolor dapibus ornare et eget augue. Nulla posuere orci felis, id iaculis magn aliquet vel. Donec ac fringilla odio. Nam fringilla justo ac velit iaculis scelerisque. Nunc placerat interdum nulla ut fringilla. Suspendisse aliquam blandit justo, consectetur condimentum nulla interdum sed. Etiam a risus convallis, fermentum metus nec, aliquet urna. Praesent faucibus massa velit, ut porttitor urna scelerisque nec. Suspendisse et mi cursus, dignissim velit sed, bibendum quam. Praesent odio risus, facilisis quis elit sit amet, interdum convallis ligula.<br><br> Phasellus eleifend ac orci pulvinar ultricies. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec ut ipsum malesuada, vestibulum libero ac, efficitur ligula. Morbi sed felis in justo aliquam porttitor et vel risus. Maecenas vel placerat nibh. Maecenas tempor et erat a facilisis. Morbi lobortis nibh nec blandit consectetur. Ut lobortis sit amet justo sit amet fringilla. Nam gravida erat felis, non pellentesque sem rutrum vel. Aenean sagittis scelerisque ornare. Ut sed erat dolor. Donec cursus imperdiet leo sit amet viverra. Nullam quis semper mi. Praesent ipsum nisi, semper at mollis a, elementum in orci. Proin congue erat ut magna facilisis, vel consequat mi iaculis. Curabitur elementum felis pellentesque sapien maximus, ac condimentum lacus laoreet. In hac habitasse platea dictumst. Praesent ullamcorper metus ac arcu cursus, et elementum eros ultricies. In molestie, tellus nec sollicitudin pellentesque, elit nisl elementum justo, eu ultricies neque nibh placerat nisi. Proin lacinia sapien ut ultrices gravida. Fusce luctus purus a laoreet ornare. Vestibulum tincidunt ultricies leo et egestas. Aliquam eget elit sed sapien congue finibus sed quis mi. Suspendisse suscipit nisl eu nibh malesuada, et cursus neque congue.<br><br> Donec maximus pellentesque urna, non malesuada justo ultricies eget. Nullam non viverra nisl, at finibus sapien. Praesent sed nisl nisi. Vestibulum rutrum consectetur massa, a dapibus nisi iaculis eget. Nullam vulputate elit vel sem luctus gravida. Suspendisse sed augue nec orci feugiat suscipit. In et vehicula elit. Ut vel lorem gravida, finibus dui a, dictum odio. In tellus nisl, pharetra vel mauris sit amet, ultricies faucibus libero. Suspendisse augue lacus, mattis sollicitudin faucibus at, vehicula tempor nulla. Cras odio justo, semper eget malesuada quis, tristique vitae erat. Sed vitae lacus sed nunc aliquet luctus at id neque. Aliquam sit amet dignissim orci. Maecenas vehicula elit condimentum semper tincidunt. Sed non turpis ac tortor efficitur commodo vitae et erat.';
+
+    aboutDiv.appendChild(aboutTitle);
+    aboutDiv.appendChild(aboutDescription);
+
+    content.appendChild(aboutDiv);
+}
+
+export {createAbout}

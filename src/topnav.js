@@ -10,14 +10,15 @@ function createNavBar() {
     topDiv.appendChild(restaurantlogo);
 
     const navbarContent = ['Home', 'About', 'Menu', 'Contact'];
-    const navbarContentId = ['#home-sec', '#about-sec', '#menu-sec', '#contact-sec'];
+    const navbarContentId = ['#home', '#about', '#menu', '#contact'];
     
     let navBarOptions = document.createElement('ul');
     
     for (var i = 0; i < navbarContent.length; i++) {
         let listElem = document.createElement('li');
         let link = document.createElement('a');
-        link.href = navbarContentId[i];
+        link.id = navbarContentId[i];
+        link.href = '#';
         link.innerHTML = navbarContent[i];
         listElem.appendChild(link);
         navBarOptions.appendChild(listElem);
