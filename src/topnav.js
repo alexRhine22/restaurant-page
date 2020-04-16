@@ -1,3 +1,5 @@
+const content = document.querySelector("#content");
+
 function createNavBar() {
     let topDiv = document.createElement('div');
     topDiv.className = 'topnav';
@@ -7,10 +9,23 @@ function createNavBar() {
 
     topDiv.appendChild(restaurantlogo);
 
-    const navBarOptions = document.createElement("ul");
+    const navbarContent = ['Home', 'About', 'Menu', 'Contact'];
+    const navbarContentId = ['#home-sec', '#about-sec', '#menu-sec', '#contact-sec'];
+    
+    let navBarOptions = document.createElement("ul");
+    
+    for (var i = 0; i < navbarContent.length; i++) {
+        let listElem = document.createElement("li");
+        let link = document.createElement("a");
+        link.href = navbarContentId[i];
+        link.innerHTML = navbarContent[i];
+        listElem.appendChild(link);
+        navBarOptions.appendChild(listElem);
+    }
 
+    topDiv.appendChild(navBarOptions);
 
-    document.querySelector("body").prepend(topDiv);
+    content.appendChild(topDiv); // add top nav sticky bad to content
 }
 
 export {createNavBar}

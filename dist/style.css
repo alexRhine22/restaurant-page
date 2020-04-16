@@ -1,0 +1,150 @@
+:root {
+    --yellow: rgb(223, 194, 33);
+    --light-blue: rgb(0, 219, 255);
+    --black: rgb(0, 0, 0);
+    --grey: #333;
+    --white: white;
+    --floral-white: #f2f2f2;
+  }
+  
+  /**
+   *
+   * topnav
+   *
+   *******************************************************************************/
+  .topnav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--grey);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .topnav h1 {
+    color: var(--yellow);
+    text-shadow: 2px 2px var(--black);
+    font-style: oblique;
+  }
+  
+  .topnav ul {
+    list-style-type: none;
+  }
+  
+  .topnav li {
+    display: inline;
+  }
+  
+  .topnav li:not(:last-child) {
+    border-right: 2px solid var(--white);
+  }
+  
+  .topnav a {
+    color: var(--floral-white);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .topnav a:hover {
+    text-decoration: underline;
+  }
+  
+  /**
+   *
+   * menu
+   *
+   *******************************************************************************/
+  .menu {
+    /* reserved */
+  }
+  
+  .menu ul{
+    list-style-position: inside;
+    padding: 0;
+  }
+  
+  /**
+   *
+   * contact 
+   *
+   *******************************************************************************/
+  .contact {
+    /* reserved */
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  
+  .contact ul {
+    list-style-type: none;
+    padding-right: 40px;
+  }
+  
+  .vl {
+    border-left: 4px solid var(--black);
+    height: 70px;
+  }
+  
+  /** 
+   *
+   * globals 
+   *
+   *******************************************************************************/
+  html, body {
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--floral-white);
+  }
+  
+  .img-container {
+    position: relative;
+    text-align: center;
+  }
+  
+  .centered {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 72px;
+    font-weight: 600;
+    text-shadow: 2px 4px var(--black);
+    font-style: oblique;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--light-blue);
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  hr {
+    width: 70%;
+    border: 2px solid var(--light-blue);
+  }
+  
+  /** 
+   *
+   * Helpers
+   * 
+   *******************************************************************************/
+  .text-center {
+    text-align: center;
+  }
+  
+  h2 {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 48px;
+    color: var(--yellow);
+    text-shadow: 2px 2px var(--black);
+  }
+  
+  .section-padding {
+    padding: 40px 150px;
+  }
