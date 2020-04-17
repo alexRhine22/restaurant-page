@@ -10,23 +10,23 @@ function createNavBar() {
     topDiv.appendChild(restaurantlogo);
 
     const navbarContent = ['Home', 'About', 'Menu', 'Contact'];
-    const navbarContentId = ['#home', '#about', '#menu', '#contact'];
     
     let navBarOptions = document.createElement('ul');
     
     for (var i = 0; i < navbarContent.length; i++) {
+        let navBarItem = navbarContent[i];
         let listElem = document.createElement('li');
         let link = document.createElement('a');
-        link.id = navbarContentId[i];
+        link.id = navBarItem.toLowerCase();
         link.href = '#';
-        link.innerHTML = navbarContent[i];
+        link.innerHTML = navBarItem;
         listElem.appendChild(link);
         navBarOptions.appendChild(listElem);
     }
 
     topDiv.appendChild(navBarOptions);
 
-    content.appendChild(topDiv); // add top nav sticky bad to content
+    content.appendChild(topDiv); 
 }
 
 export {createNavBar}
